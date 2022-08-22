@@ -22,7 +22,7 @@ weatherForm.addEventListener('submit', (e) => {
       messageOne.textContent = data.error;
       } else {
         messageOne.textContent = data.location;
-        messageTwo.textContent = data.forecast.weather_description + " " + data.forecast.current_temp + " " + data.forecast.feels_like_temp;
+        messageTwo.textContent = data.forecast.weather_description + " " + data.forecast.current_temp + " " + data.forecast.feels_like_temp + " " + data.forecast.humidity;
       };
     });
   });
